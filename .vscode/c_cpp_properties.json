@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "compilerPath": "C:\\cygwin64\\bin\\gcc.exe",
+      "compilerArgs": [
+        "-Wall",
+        "-Wextra",
+        "-Wshadow",
+        "-Wconversion",
+        "-fsanitize=undefined",
+        "-lm"
+      ],
+      "cStandard": "c17",
+      "intelliSenseMode": "linux-gcc-x64",
+      "configurationProvider": "ms-vscode.makefile-tools",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

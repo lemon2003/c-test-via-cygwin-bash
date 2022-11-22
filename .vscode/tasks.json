@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build - gcc",
+      "type": "shell",
+      "command": "/usr/bin/gcc",
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-Wshadow",
+        "-Wconversion",
+        "-lm",
+        "-ggdb",
+        "/cygdrive${command:extension.commandvariable.file.filePosix}",
+        "-o",
+        "/cygdrive${command:extension.commandvariable.file.fileDirnamePosix}/${fileBasenameNoExtension}.exe"
+      ]
+    }
+  ]
+}
